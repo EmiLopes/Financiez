@@ -1,0 +1,368 @@
+button {
+  font-family: 'Roboto', sans-serif;
+  transition: all 0.5s ease;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0px 0px 0px;
+}
+
+.button button {
+  border-radius: 10px;
+  padding: 15px;
+  color: white;
+  cursor: pointer;
+  border: 0;
+  background-color: transparent;
+}
+
+.button i {
+  color: #0f1336;
+}
+.inputContainer {
+  border-radius: 10px;
+  border: 2px solid #0f1336;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.register:hover {
+  background-color: #58df46;
+  color: black;
+}
+
+.header a:hover {
+  font-size: 110%;
+}
+
+.box1 .contentBx {
+  padding: 10px 20px;
+}
+
+.box1 .contentBx .label {
+  padding: 10px;
+  background: #0f1336;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0px 0px 1em rgb(0, 0, 0);
+}
+
+.box1 .contentBx .mydiv p {
+  position: relative;
+  background: rgb(255, 255, 255, 0.5);
+  color: black;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  overflow-y: auto;
+}
+
+.box1 .contentBx.active .mydiv p {
+  height: auto;
+  padding: 10px;
+  position: initial;
+  border-radius: 10px;
+}
+
+.contentBx h3 {
+  pointer-events: none;
+}
+.title {
+  padding: 20px;
+  text-align: center;
+}
+
+.first {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+iframe {
+  border: 0;
+  pointer-events: none;
+}
+.label {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+h2 {
+  text-align: center;
+  padding: 20px;
+}
+
+p {
+  font-size: 20px;
+}
+
+.mydiv p {
+  font-size: 15px;
+}
+.box1 {
+  padding: 60px;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.label .title {
+  color: #58df46;
+}
+
+.label .title:hover {
+  color: #fff;
+}
+
+.author {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background: linear-gradient(180deg, rgb(15, 19, 54) 3%, rgb(0, 0, 0) 100%);
+  padding: 90px 0px;
+  border: 0;
+  color: #fff;
+}
+
+.wwa {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.perfil1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  padding: 30px;
+}
+.perfil1 p {
+  font-size: 15px;
+  width: 100%;
+}
+.foto img {
+  display: flex;
+  width: 200px;
+  height: 180px;
+  border: 2px solid #58df46;
+  border-radius: 50%;
+  margin: 40px;
+  box-shadow: 0px 0px 1em rgb(0, 0, 0);
+  gap: 100px;
+  max-width: 100%;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+}
+
+.landing-page img {
+  width: 550px;
+  height: 500px;
+}
+.landing-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.contentLanding {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  color: white;
+}
+
+.contentLanding button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  border: 0;
+  padding: 20px;
+  width: 200px;
+  background-color: #58df46;
+}
+
+.contentLanding button p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+}
+
+.contentLanding button:hover {
+  box-shadow: 0px 0px 1em rgb(0, 0, 0);
+  cursor: pointer;
+  font-size: 110%;
+}
+
+.formulario form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  padding: 50px 60px;
+}
+.formulario {
+  display: flex;
+  padding: 100px;
+}
+
+.formulario form input.normal {
+  border: 2px solid#c5c3c3;
+  padding: 10px;
+  gap: 20px;
+  background: transparent;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  color: white;
+}
+.formulario form textarea.ask {
+  border-radius: 10px;
+  height: 200px;
+  width: 300px;
+  border: 2px solid#c5c3c3;
+  padding: 10px;
+  gap: 20px;
+  background: transparent;
+  color: white;
+}
+
+.formulario form input:hover {
+  border-bottom: 2px solid#58df46;
+}
+.formulario form textarea:hover{
+  border: 2px solid #58df46;
+}
+textarea:focus{
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+input:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+.formulario form label {
+  display: flex;
+  padding: 20px 0px;
+}
+
+.left,
+.right {
+  display: flex;
+  flex-direction: column;
+}
+.buttonx button {
+  padding: 10px;
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+  border: 2px solid #58df46;
+}
+
+.illustration3 img {
+  width: 60px;
+}
+
+.title1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 50px;
+}
+.title1 h1 {
+  color: #58df46;
+  font-size: 50px;
+}
+.title1 h2 {
+  color: white;
+}
+.all {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 10px;
+  background: #0f1336;
+  box-shadow: 0px 0px 1em rgb(0, 0, 0);
+  color: white;
+  border-radius: 20px;
+  
+}
+
+.side{
+  display: flex;
+  gap: 50px;
+}
+
+@media only screen and (min-width: 150px) and (max-width: 700px) {
+  .landing-page .contentLanding button {
+    display: flex;
+    justify-content: center;
+  }
+
+  footer {
+    padding: 20px;
+  }
+
+  .side{
+    display: flex;
+    gap: 25px;
+  }
+
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    
+  }
+  .formulario form label {
+    display: flex;
+    padding: 10px 0px;
+  }
+  .formulario form textarea.ask {
+    height: 200px;
+    width: 180px;
+  }
+  input {
+    width: 150px;
+  }
+
+  .all{
+  display: flex;
+  padding: 5px 10px;
+  }
+
+  .title1 {
+    display: none;
+    visibility: hidden;
+  }
+
+  label{
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 1000px) {
+  .title1 {
+    display: none;
+    visibility: hidden;
+  }
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+  }
+}

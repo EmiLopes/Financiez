@@ -1,0 +1,222 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+.box-login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px;
+}
+
+.title h2 {
+  padding: 20px;
+  font-size: 18px;
+}
+.logo img {
+  width: 200px;
+  height: 30px;
+}
+.logo {
+  padding: 30px 0 0 0;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255, 0.1);
+  box-shadow: 0px 0px 1em black;
+  border-radius: 10px;
+}
+.texto {
+  padding: 20px;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+}
+
+button {
+  padding: 10px;
+  background-color: #0f1336;
+  color: white;
+  border-radius: 5px;
+  border: 2px solid #58df46;
+}
+input {
+  border: 0;
+  border-radius: 5px;
+  padding: 5px;
+  width: 300px;
+  height: 40px;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.button button {
+  border-radius: 14px;
+  padding: 5px;
+  width: 100%;
+  width: 150px;
+  cursor: pointer;
+  height: 40px;
+  transition: all 0.5s ease;
+  border: 2px solid #58df46;
+}
+
+.inputContainer {
+  border-radius: 10px;
+  border: 2px solid #ffffff;
+  padding: 5px;
+  padding-left: 20px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inputContainer i,
+.inputContainer input::placeholder {
+  color: #656565;
+}
+
+.email.inputContainer,
+.password.inputContainer,
+.nome.inputContainer,
+.contato.inputContainer,
+.profissao.inputContainer {
+  display: flex;
+  gap: 20px;
+}
+
+input:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
+select:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.remember a:hover {
+  font-size: 102%;
+}
+
+button:hover {
+  background-color: #58df46;
+  color: black;
+}
+
+.remember a {
+  color: #0f1336;
+  display: flex;
+  align-items: left;
+}
+
+.seta {
+  position: fixed;
+  top: 25px;
+  left: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.seta p {
+  pointer-events: none;
+  color: white;
+  font-size: 18px;
+  display: flex;
+  padding: 8px;
+}
+
+.seta i {
+  color: white;
+}
+
+i {
+  color: black;
+}
+
+select {
+  border: 0;
+  border-radius: 5px;
+  width: 300px;
+  height: 40px;
+}
+
+@media only screen and (min-width: 150px) and (max-width: 650px) {
+  input,
+  select {
+    border: 0;
+    border-radius: 5px;
+    width: 200px;
+    height: 30px;
+  }
+
+  .input {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .button button {
+    border-radius: 14px;
+    padding: 5px;
+    width: 100%;
+    width: 150px;
+    cursor: pointer;
+    height: 40px;
+    transition: all 0.5s ease;
+    border: 2px solid #58df46;
+  }
+  .content form.form .button button p {
+    font-size: 0.8rem;
+  }
+
+  .content form.form a {
+    font-size: 0.8rem;
+  }
+
+  .logo img {
+    width: 150px;
+    height: 30px;
+  }
+
+  .box-login {
+    display: flex;
+    padding: 80px;
+  }
+
+  .seta p {
+    display: none;
+  }
+}

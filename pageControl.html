@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Controle</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style/pageControl.css" />
+  </head>
+
+  <body>
+    <div class="first">
+      <h3>Saldo adquirido:</h3>
+      <div class="text1">
+        <h2>Saldo disponível</h2>
+        <h1>R$</h1>
+      </div>
+      <h3>Saldo gasto:</h3>
+    </div>
+    <div class="control">
+      <table>
+        <thead>
+          <tr>
+            <td>Data da movimentação</td>
+            <td>Operação</td>
+            <td>Descrição</td>
+            <td>Valor</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr></tr>
+        </tbody>
+      </table>
+      <button class="btnOpen" onclick="">+</button>
+    </div>
+    <div class="modal">
+      <div class="content">
+        <form action="">
+          <h3>Qual operação você deseja adicionar?</h3>
+          <div class="label inputContainer">
+            <label for="">Descrição</label>
+            <input type="text" />
+          </div>
+          <div class="check data">
+            <input
+              type="checkbox"
+              class="checkbox1"
+              onclick="marcaDesmarca(this)"
+            />
+            <label for="">Ganho</label>
+            <span></span>
+
+            <input
+              type="checkbox"
+              class="checkbox2"
+              onclick="marcaDesmarca(this)"
+              required
+            />
+            <label for="">Gasto</label>
+            <span></span>
+
+            <label for=""> Data</label>
+            <input type="date" required />
+          </div>
+          <div class="valor inputContainer">
+            <label for="">Valor</label>
+            <input type="number" required class="money"/>
+          </div>
+          <div class="button">
+            <button class="btnClose">Submeter</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <footer>
+      <div class="months">
+        <div class="month"><a href="">Jan</a></div>
+        <div class="month"><a href="">Fev</a></div>
+        <div class="month"><a href="">Marc</a></div>
+        <div class="month"><a href="">Abr</a></div>
+        <div class="month"><a href="">Mai</a></div>
+        <div class="month"><a href="">Jun</a></div>
+        <div class="month"><a href="">Jul</a></div>
+        <div class="month"><a href="">Ago</a></div>
+        <div class="month"><a href="">Set</a></div>
+        <div class="month"><a href="">Out</a></div>
+        <div class="month"><a href="">Nov</a></div>
+        <div class="month"><a href="">Dez</a></div>
+      </div>
+    </footer>
+    <script>
+      const btnOpen = document.querySelector('.btnOpen')
+      const btnClose = document.querySelector('.btnClose')
+      const modal = document.querySelector('.modal')
+
+      btnOpen.addEventListener('click', () => {
+        modal.style.display = 'block'
+      })
+
+      btnClose.addEventListener('click', () => {
+        modal.style.display = 'none'
+      })
+
+      function marcaDesmarca(caller) {
+        var checks = document.querySelectorAll('input[type= checkbox]')
+        checks.forEach(c => (c.checked = c == caller))
+      }
+
+      document.querySelectorAll(money);{
+        var numb = money
+        numb.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'} )
+      }
+      
+    </script>
+  </body>
+</html>

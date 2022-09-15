@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro</title>
+    <link
+      rel="shortcut icon"
+      href="./imagens/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style/home.css" />
+    <link rel="stylesheet" href="./style/global.css" />
+    <link rel="stylesheet" href="./style/form.css" />
+    <script
+      src="https://kit.fontawesome.com/f18aeaea05.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+  </head>
+  <body>
+    <div class="seta">
+      <i class="fas fa-arrow-left"></i>
+      <p>Voltar</p>
+    </div>
+    <div class="box-login">
+      <div class="content">
+        <div class="logo">
+          <img src="./imagens/logo.png" alt="" />
+        </div>
+        <form class="form">
+          <div class="nome inputContainer">
+            <i class="fa-solid fa-user"></i>
+            <input
+              type="name"
+              name="nome"
+              placeholder="Qual seu nome completo?"
+              required
+            />
+          </div>
+          <div class="profissao inputContainer">
+            <i class="fa-solid fa-user-graduate"></i>
+            <select name="Profissão" required>
+              <option value="0">Qual sua área de atuação?</option>
+              <option value="1">Área administrativa</option>
+              <option value="2">Área jurídica</option>
+              <option value="3">Área artística</option>
+              <option value="4">Área de ensino</option>
+              <option value="4">Área tecnológica</option>
+              <option value="5">Área da saúde</option>
+              <option value="6">Área do esporte</option>
+            </select>
+          </div>
+
+          <div class="input">
+            <div class="email inputContainer">
+              <i class="fa-solid fa-envelope"></i>
+              <input
+                type="email"
+                name="email"
+                placeholder="Qual é seu e-mail?"
+                required
+              />
+            </div>
+            <div class="password inputContainer">
+              <i class="fas fa-lock"></i>
+              <input
+                type="password"
+                name="password"
+                placeholder="Crie uma senha"
+                required
+              />
+            </div>
+            <div class="contato inputContainer">
+              <i class="fa-solid fa-phone"></i>
+              <input
+                type="tel"
+                data-js="phone"
+                placeholder="Qual seu telefone para contato?"
+                required
+              />
+            </div>
+          </div>
+          <div class="button">
+            <button>Criar conta</button>
+          </div>
+
+          <a href="./login.html">Já possuo cadastro!</a>
+        </form>
+      </div>
+    </div>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
